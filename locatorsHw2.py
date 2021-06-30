@@ -30,7 +30,7 @@ driver.find_element(By.CLASS_NAME, "a-expander-prompt").click()
 # create your account
 # driver.find_element(By.ID, "createAccountSubmit").click()
 
-# driver.find_element(By.XPATH, "//a[text()='Conditions of Use']").click()
+# driver.find_element(By.XPATH, "//a[@href='/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&nodeId=508088']").click()
 
-driver.find_element(By.XPATH, "//a[text()='Privacy Notice']").click()
+driver.find_element(By.XPATH, "//div[@id='legalTextRow']//a[contains(@href,'ap_signin_notification_privacy_notice')]").click()
 

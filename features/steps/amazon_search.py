@@ -1,20 +1,22 @@
 from selenium.webdriver.common.by import By
 from behave import given, when, then
 from time import sleep
+from selenium.webdriver.support import expected_conditions as EC
 
 @given('Open Amazon page')
 def open_amazon(context):
     context.driver.get('https://www.amazon.com/')
 
+
 @when('Input {search_word} in search field')
 def search_amazon(context, search_word):
     context.driver.find_element(By.ID, 'twotabsearchtextbox').send_keys(search_word)
-    sleep(2)
+    # sleep(2)
 
 @when('Click on Amazon search icon')
 def click_search(context):
     context.driver.find_element(By.ID, 'nav-search-submit-button').click()
-    sleep(2)
+    # sleep(2)
 
 @then('Verify search worked')
 def verify_search_worked(context):

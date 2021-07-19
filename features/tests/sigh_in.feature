@@ -7,3 +7,8 @@ Feature: Tests for sigh in page
     Given Open Amazon page
     When Click Orders
     Then Verify Sign in page opened
+
+  Scenario: Sign in page can be opened from sign in popup
+    Given Open Amazon page
+    When Click sign in from popup
+    Then Verify Sign in page opened

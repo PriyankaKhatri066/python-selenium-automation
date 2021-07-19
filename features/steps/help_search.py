@@ -11,7 +11,7 @@ def open_amazon_help(context):
 @when('Use “Search Help Library” field and search for Cancel order')
 def search_cancel_order(context):
     context.driver.find_element(By.ID, "helpsearch").send_keys('Cancel order')
-    sleep(3)
+    # sleep(3)
 
 @when('Emulate hitting keyboard ENTER, send_keys command')
 def hit_enter(context):

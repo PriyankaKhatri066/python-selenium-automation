@@ -5,10 +5,10 @@ from behave import given, when, then
 def open_customer_ser_page(context):
     context.driver.get('https://www.amazon.com/gp/help/customer/display.html')
 
-@then("Verify that {Expected} text is present on Customer service page")
-def verify_text(context, Expected):
+@then("Verify that {expected} text is present on Customer service page")
+def verify_text(context, expected):
     actual= context.driver.find_element(By.CSS_SELECTOR, 'div.ss-landing-container h1').text
-    assert Expected == actual, f'Expected text is {Expected}, but got {actual}'
+    assert expected == actual, f'Expected text is {expected}, but got {actual}'
 
 @then('Verify that some things you can go box is persent')
 def box_some_things(context):

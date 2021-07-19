@@ -8,7 +8,7 @@ Feature: Test Amazon Cart
 
   Scenario: User can add product in cart
     Given Open Amazon page
-    When Input Coffee Mug in search field
+    When Input Women shoes in search field
     And Click on Amazon search icon
     And Click on first product
     And Click on Add to cart button

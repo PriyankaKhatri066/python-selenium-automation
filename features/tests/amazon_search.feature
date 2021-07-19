@@ -9,6 +9,10 @@ Feature: Test Amazon Search
     And Click on Amazon search icon
     Then Verify search worked
 
-   Scenario: Amazon footer has correct count of links
+  Scenario: Amazon footer has correct count of links
     Given Open Amazon page
     Then Verify Amazon footer has 40 links
+
+  Scenario: User can select blouse color
+    Given Open Amazon product blouse page
+    Then Verify user can click through colors
